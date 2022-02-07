@@ -1,0 +1,377 @@
+:root {
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #ffffff;
+  --background: #2f303a;
+  --team-color: #f5f4fa;
+  --text-color: #757575;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--main-color);
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  height: 80px;
+}
+.header > a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-right: 50px;
+}
+.logo {
+  color: var(--accent-color);
+}
+/* --- Main --- */
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  color: var(--main-color);
+  margin: 20px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+}
+.header > ul {
+  display: flex;
+  padding-left: 300px;
+}
+.link-contact {
+  color: var(--text-color);
+  margin: 20px;
+}
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--accent-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.hero h1 {
+  width: 696px;
+  height: 120px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.hero button {
+  box-sizing: content-box;
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: var(--accent-color);
+  color: var(--title-color);
+
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero button:hover,
+.hero button:focus {
+  background-color: var(--title-color);
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Skills ---------- */
+
+.skills {
+  margin-top: 95px;
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.skills h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  width: 270px;
+  height: 16px;
+}
+.skills p {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+  text-align: left;
+  justify-content: center;
+  width: 270px;
+  height: 75px;
+  margin-right: 30px;
+}
+
+/* ---------- Work ---------- */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 95px;
+}
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+.work-list li {
+  margin-right: 30px;
+  justify-content: center;
+}
+
+/* ---------- Team ---------- */
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 650px;
+  margin-top: 95px;
+  background-color: var(--team-color);
+}
+.team h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-card {
+  justify-content: center;
+  width: 270px;
+  height: 368px;
+  margin: 20px;
+  background-color: var(--title-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.team-card h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-card p {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 250px;
+  align-items: center;
+  background-color: var(--background);
+  color: var(--title-color);
+}
+.footer > a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  padding-right: 1020px;
+  margin-top: 10px;
+}
+
+/* ----------- Contact ---------- */
+
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+  padding-right: 990px;
+}
+.address-link:hover {
+  color: var(--accent-color);
+}
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent-color);
+}
+
+/* ---------- Portfolio ---------- */
+
+.hr {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Galery ---------- */
+
+.gallery-projects {
+  align-items: center;
+  justify-content: center;
+  width: 1170px;
+  margin: 75px auto 0 auto;
+}
+.gallery-projects h1 {
+  display: none;
+}
+
+/* ---------- Main ---------- */
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.button-list li {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.button-list button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  box-sizing: content-box;
+  height: 40px;
+  background-color: var(--team-color);
+  border-radius: 4px;
+  border: var(--team-color);
+}
+.button-list button:hover,
+.button-list button:focus {
+  background-color: var(--accent-color);
+  color: var(--title-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ---------- Examples ---------- */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects li {
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 370px;
+  max-height: 404px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eeeeee;
+}
+.projects li:hover,
+.projects li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--main-color);
+  padding-left: 20px;
+}
+.project-desc {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
+  padding-left: 20px;
+  margin-top: -10px;
+}
