@@ -341,7 +341,7 @@ address {
   flex-wrap: wrap;
   justify-content: center;
 }
-.projects li {
+.project-item {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
@@ -352,8 +352,8 @@ address {
   border-width: 1px;
   border-color: #eeeeee;
 }
-.projects li:hover,
-.projects li:focus {
+.project-item:hover,
+.project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -366,7 +366,7 @@ address {
   color: var(--main-color);
   padding-left: 20px;
 }
-.project-desc {
+.project-description {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
