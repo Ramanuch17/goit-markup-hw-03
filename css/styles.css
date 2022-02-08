@@ -294,7 +294,7 @@ address {
 .gallery-projects {
   align-items: center;
   justify-content: center;
-  width: 1170px;
+
   margin: 75px auto 0 auto;
 }
 .gallery-projects h1 {
@@ -340,6 +340,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 94px;
 }
 .project-item {
   flex-direction: column;
@@ -347,6 +348,10 @@ address {
   box-sizing: border-box;
   max-width: 370px;
   max-height: 404px;
+
+  flex-basis: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 
   border-style: solid;
   border-width: 1px;
