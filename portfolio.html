@@ -4,151 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>goit-markup-hw-03</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Портфолио</title>
   </head>
   <body>
+    <!-- Header section-->
 
-    <!---------- Header ---------->
+    <header class="header-page">
+      <div class="header-container container">
+        <nav class="site-nav">
+          <!--Основная навигация-->
 
-    <header>
-      <div class="container header">
-        <a href="index.html" class="logo"> <span class="logo-item">Web</span>Studio</a>
-
-        <!---------- Nav ---------->
-
-        <nav>
-          <ul class="nav">
-            <li><a href="index.html" class="nav-link">Студия</a></li>
-            <li><a href="portfolio.html" class="nav-link current">Портфолио</a></li>
-            <li><a href="#contact" class="nav-link">Контакты</a></li>
+          <a href="./index.html" class="link"
+            ><span lang="en" class="logo"
+              ><span class="web">Web</span>Studio</span
+            >
+          </a>
+          <ul class="nav list">
+            <li class="nav-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a>
+        <ul class="contacts-items list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="link">
+              info@devstudio.com
+            </a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
 
-    <!---------- Main ---------->
+    <!-- Main section -->
 
     <main>
+      <!-- Portfolio section -->
 
-      <!--- Galery project --->
-
-      <section class="section projects">
+      <section class="portfolio section">
         <div class="container">
-          <h1>Галерея проектов</h1>
-          <ul class="button-menu">
-            <li>
+          <!-- Этот заголовок будет скрыт при помощи стилей -->
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter list">
+            <li class="filter-button">
               <button type="button" class="button">Все</button>
             </li>
-            <li>
+            <li class="filter-button">
               <button type="button" class="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filter-button">
               <button type="button" class="button">Приложения</button>
             </li>
-            <li>
-              <button type="button" class="button">Дизайн</button>
-            </li>
-            <li>
+            <li class="filter-button">
               <button type="button" class="button">Маркетинг</button>
             </li>
+            <li class="filter-button">
+              <button type="button" class="button">Дизайн</button>
+            </li>
           </ul>
-          <ul class="pr-list">
-            <li class="pr-item">
-              <a href=""
-                ><img src="./image/project-1.jpg" alt="ноутбук"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Технокряк</h2>
-                  <p class="pr-desc">Веб-сайт</p>
-                  </div>
-                </a>
-            </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-2.jpg" alt="баскетбольный постер" />
-                <div class="pr-text">
-                  <h2 class="pr-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="pr-desc">Дизайн</p>
-                </div>
-                </a>
-            </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-3.jpg" alt="логотип ресторана" />
-                  <div class="pr-text">
-                    <h2 class="pr-title">Ресторан Seafood</h2>
-                    <p class="pr-desc">Приложение</p>
-                  </div>
-              </a>
-            </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-4.jpg" alt="наушники"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Проект Prime</h2>
-                  <p class="pr-desc">Маркетинг</p>
+          <ul class="galery list">
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-1.jpg"
+                  alt="Главная страница сайта"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Технокряк</h2>
+                  <p class="filter-unit">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-5.jpg" alt="две коробки"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Проект Boxes</h2>
-                  <p class="pr-desc">Приложение</p>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-2.jpg"
+                  alt="Плакат с баскетболистами"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter-unit">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-6.jpg" alt="дэсктоп"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Inspiration has no borders</h2>
-                  <p class="pr-desc">Веб-сайт</p>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-3.jpg"
+                  alt="Логотип нп фоне рыбы"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Ресторан Seafood</h2>
+                  <p class="filter-unit">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-7.jpg" alt="книга"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Издание Limited Edition</h2>
-                  <p class="pr-desc">Дизайн</p>
-                </div>
-                </a>
-            </li>
-            <li class="pr-item">
-              <a href="">
-                <img src="./image/project-8.jpg" alt="бирка"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Проект LAB</h2>
-                  <p class="pr-desc">Маркетинг</p>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-4.jpg"
+                  alt="Наушники"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Проект Prime</h2>
+                  <p class="filter-unit">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="pr-item">
-              <a href=""><img src="./image/project-9.jpg" alt="лэптоп"/>
-                <div class="pr-text">
-                  <h2 class="pr-title">Growing Business</h2>
-                  <p class="pr-desc">Приложение</p>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-5.jpg"
+                  alt="Две коробки"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Проект Boxes</h2>
+                  <p class="filter-unit">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-6.jpg"
+                  alt="Монитор на котором изображен веб-сайт"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Inspiration has no Borders</h2>
+                  <p class="filter-unit">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-7.jpg"
+                  alt="Книга"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Издание Limited Edition</h2>
+                  <p class="filter-unit">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-8.jpg"
+                  alt="Логотип"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Проект LAB</h2>
+                  <p class="filter-unit">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-item">
+              <a href="" class="link">
+                <img
+                  src="./image/project-9.jpg"
+                  alt="Человек работающий на ноутбуке"
+                  width="370"
+                  class="galery-item-img"
+                />
+                <div class="photo-info">
+                  <h2 class="galery-title">Growing Business</h2>
+                  <p class="filter-unit">Приложение</p>
                 </div>
               </a>
             </li>
@@ -157,30 +209,36 @@
       </section>
     </main>
 
-    <!---------- Footer ---------->
+    <!-- Footer section-->
 
-    <footer>
+    <footer class="footer-page">
       <div class="container">
-        <a href="index.html" class="footer-logo"><span class="logo-item">Web</span>Studio</a>
+        <a href="./index.html" class="footer-link"
+          ><span lang="en" class="logo"
+            ><span class="web">Web</span>Studio</span
+          >
+        </a>
 
-        <!---------- Contact ---------->
+        <!-- Contact section -->
 
-        <address id="contact">
-          <ul>
-            <li class="li-address">
+        <address class="footer-address">
+          <ul class="footer-contacts list">
+            <li>
               <a
                 href="https://goo.gl/maps/FoHEAQYZBGtC9JvY6"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="address-link"
-                >г. Киев, бул. Леси Украинки, 26</a
-              >
+                class="link"
+                >г. Киев, бул. Леси Украинки, 26
+              </a>
             </li>
-            <li  class="li-contact">
-              <a href="mailto:info@example.com" class="address-contact">info@example.com</a>
+            <li class="footer-contact-mail">
+              <a href="mailto:info@example.com" class="link">
+                info@example.com
+              </a>
             </li>
-            <li  class="li-contact">
-              <a href="tel:+380991111111" class="address-contact">+38 099 111 11 11</a>
+            <li class="footer-contact-tel">
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
