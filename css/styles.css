@@ -17,7 +17,8 @@
   --secondary-background-color: #2f303a;
   --single-background-color: #f5f4fa;
   --link-hover-focus-web-color: #2196f3;
-  --logo-color: #000000;
+  --logo-color-header: #000000;
+  --logo-color-footer: #ffffff;
   --footer-link-text-color: rgba(255, 255, 255, 0.6);
   --galery-background: #eeeeee;
 }
@@ -88,7 +89,7 @@ img {
 /* Логотип */
 
 .logo {
-  color: var(--logo-color);
+  color: var(--logo-color-header);
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -118,10 +119,13 @@ img {
   display: block;
   padding: 32px 0;
 }
+
 /* Маржини навігаційних посилань */
 
 .nav .nav-item + .nav-item {
   margin-left: 50px;
+  display: block;
+  padding: 32px 0;
 }
 
 /* Навігаційні посилання хедера */
@@ -369,7 +373,8 @@ img {
 
 /* Весь лого футера */
 
-.footer-logo {
+.footer-logo,
+.logo-footer {
   color: var(--primary-background-color);
 
   font-family: Raleway, sans-serif;
@@ -378,6 +383,9 @@ img {
   line-height: 1.19;
 }
 
+.logo-footer {
+  color: var(--logo-color-footer);
+}
 /* Частина лого "web" футера */
 
 .footer-web {
