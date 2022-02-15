@@ -6,11 +6,11 @@
 /* Колір посилань при ховері, фокусі  та для логотипу */
 /* Колір при ховері та фокусі кнопки #2196F3 */
 /* Колір посилань у футері rgba(255, 255, 255, 0.6) */
-/* Колір обрамлення гелереї  #eeeeee */
-
+/* Колір обрамлення гелереї  #EEEEEE */
 /* Заготовки для сторінки */
 
 :root {
+  --accent-color: #2196f3;
   --primary-text-color: #212121;
   --primary-background-color: #ffffff;
   --secondary-text-color: #757575;
@@ -34,7 +34,9 @@ body {
 }
 
 /* Видалення крапок в списках */
-
+.link {
+  text-decoration: none;
+}
 .list {
   list-style: none;
   margin: 0px;
@@ -78,6 +80,7 @@ img {
 /* Шапка сторінки */
 
 /* Рамка футера */
+
 .header-page {
   border-bottom: 1px solid #ececec;
 }
@@ -86,11 +89,11 @@ img {
   display: flex;
   align-items: center;
 }
+
 /* Логотип */
 
 .logo {
-  color: var(--logo-color-header);
-
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -98,9 +101,8 @@ img {
 }
 
 /* Колір для Web */
-
-.web {
-  color: var(--link-hover-focus-web-color);
+.header-logo {
+  color: var(--logo-color-header);
 }
 
 /* Навігація посилань */
@@ -130,12 +132,9 @@ img {
 
 /* Навігаційні посилання хедера */
 
-.header-page .link {
-  padding: 24px 0;
-
+.header-link {
+  padding: 32px 0;
   color: inherit;
-  text-decoration: none;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,6 +149,7 @@ img {
 }
 
 /* Оборачиваю в div контакты хедера */
+
 .contacts-items {
   display: flex;
   margin-left: auto;
@@ -185,6 +185,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .site-nav .link.current {
   color: var(--link-hover-focus-web-color);
 }
@@ -207,6 +208,7 @@ img {
   display: inline-block;
   background-color: var(--link-hover-focus-web-color);
   color: var(--primary-background-color);
+
   cursor: pointer;
 
   font-family: inherit;
@@ -362,6 +364,7 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--secondary-background-color);
+
   color: var(--primary-background-color);
 
   font-weight: 400;
@@ -386,8 +389,7 @@ img {
 .logo-footer {
   color: var(--logo-color-footer);
 }
-/* Частина лого "web" футера */
-
+/* Частина лого “web” футера */
 .footer-web {
   display: inline-block;
   color: var(--link-hover-focus-web-color);
@@ -398,11 +400,10 @@ img {
 .footer-link {
   display: block;
   margin-bottom: 20px;
-  text-decoration: none;
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--link-hover-focus-web-color);
+
+.footer-logo {
+  color: var(--logo-color-footer);
 }
 
 /* Оформлення адреси */
@@ -449,6 +450,7 @@ img {
   line-height: 1.63;
   text-align: center;
 }
+
 /* Кнопки фильтра */
 
 .filter .button {
